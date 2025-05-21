@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+  font-family: 'Comic Neue', cursive;
+  background: linear-gradient(135deg, #4B0082 0%, #000 50%, #1a1a2e 100%);
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px #00F5FF;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.logo {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#countdown {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00F5FF;
+  margin: 1rem 0;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.7; }
+  to { opacity: 1; }
+}
+
+.connect-wallet {
+  background: #00F5FF;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: transform 0.3s;
+}
+
+.connect-wallet:hover {
+  transform: scale(1.1);
+}
+
+/* Tokenomics & Roadmap */
+.tokenomics, .roadmap, .gallery {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card, .timeline {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00F5FF;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Meme Gallery */
+.memes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.memes img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.memes img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.social a {
+  color: #00F5FF;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .memes img {
+    width: 100px;
+    height: 100px;
+  }
+}
